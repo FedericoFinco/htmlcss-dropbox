@@ -36,7 +36,9 @@ margin: 0 auto;}
 .gap{gap: 1rem;}
 .gap3{gap: 3rem;}
 .pad1{padding: 1em;}
+.pad2{padding: 2em;}
 .paddingT3{padding-top: 3rem;}
+.paddingT5{padding-top: 5rem;}
 .marginT1{margin-top: 1rem;}
 .marginT2{margin-top: 2rem;}
 .marginT3{margin-top: 3rem;}
@@ -174,3 +176,24 @@ nav {
 }
 
 .colcalc1{width: calc(100%/3 - 2rem);}
+
+.containerSquares{
+    width: 100%;
+}
+
+.colCalcSquares{
+    width: calc(100%/3);
+    height: calc(100vw/3);
+}
+
+.squared{
+    width: 50%;
+    height: 50%;
+    border: 1px solid red;
+}
+
+.midBanner{
+    overflow-y: scroll;
+}
+
+.highContent{min-height: calc(100vw/2);}
