@@ -18,13 +18,17 @@ padding-top: 4rem;
 padding-bottom: 2rem;}
 h2{font-size: 2rem;}
 h3{font-size: 1rem;}
-p{font-size: 12px;
+p{font-size: 13px;
     font-weight: lighter;}
 body{
     background-color: #222;
 }
 
 .colorPrimary{background-color: #b4d0e7;}
+.colorSecondary{background-color: rgb(233, 233, 233);}
+
+.boxed{width: 1010px;
+margin: 0 auto;}
 
 .negativeMar4Bot{margin-bottom: -4rem;}
 .gap{gap: 1rem;}
@@ -73,3 +77,70 @@ nav {
     max-width: 1120px;
     margin: 0 auto;
 }
+/************ RADIO BUTTON OP *********/
+.containerCheck input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+    border: 1px solid #757575;
+}
+
+.containerCheck {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.containerCheck input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.containerCheck .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+.containerCheck input:checked ~ .checkmark {
+    background-color: #2196F3;
+    border: none;
+}
+
+.containerCheck:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.lineHeight2{line-height: 2rem;}
+
+/**************** MAIN AGAIN ********/
+
+.containerCheck{
+    margin-right: 4em;
+}
+
+.padFix1{padding-top: calc(4rem + 3rem);}
