@@ -33,6 +33,7 @@ margin: 0 auto;}
 .negativeMar4Bot{margin-bottom: -4rem;}
 .gap{gap: 1rem;}
 .pad1{padding: 1em;}
+.marginT1{margin-top: 1rem;}
 .marginT2{margin-top: 2rem;}
 .marginT3{margin-top: 3rem;}
 
@@ -54,7 +55,7 @@ margin: 0 auto;}
 
 nav {
     background-color: white;
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -83,6 +84,7 @@ nav {
 .jamboContainer{
     max-width: 1120px;
     margin: 0 auto;
+    padding-top: 3rem;
 }
 /************ RADIO BUTTON OP *********/
 .containerCheck input {
@@ -153,10 +155,10 @@ nav {
 .padFix1{padding-top: calc(4rem + 3rem);}
 
 .borderGrayTop{
-    border: 1px solid #757575;
+    border: 1px solid #a0a0a0;
 }
 .borderGrayBody{
-    border: 1px solid #757575;
+    border: 1px solid #a0a0a0;
     border-top: none;
 }
 
