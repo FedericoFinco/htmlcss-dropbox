@@ -244,14 +244,14 @@
                     <div class="userType borderGrayTop pad05 flex justifyCenter">
                         <p><i class="fa-solid fa-building"></i>Azienda</p></i>
                     </div>
-                    <div class="flex borderGrayBody">
+                    <div class="flex typeInfo borderGrayBody">
                         <div class="flex directionColumn col70 pad1">
                             <h3>Enterprise</h3>
                             <p class="marginT2"><strong>Contatta l'ufficio vendiote per i prezzi</strong></p>
                             <p class="marginT3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus possimus praesentium qui? Ducimus maxime ad suscipit amet officiis cum cumque tempora, repellat possimus ab sapiente architecto laboriosam sunt modi facilis.</p>
                         </div>
                         <div class="col30 flex justifyCenter alignFlexStart">
-                            <button class="marginT2">Contatta</button>
+                            <button class="marginT2 myButtonBlue col">Contatta</button>
                         </div>
                     </div>
                 </div>
@@ -263,10 +263,10 @@
                 <div id="partners" class="col60">
                     <img src="./img/partner.png" alt="">
                 </div>
-                <div class="col40 flex directionColumn pad1">
+                <div class="col40 flex directionColumn pad2 alignFlexStart">
                     <h2 class="marginT2">Entra in contatto con un partner Dropbox</h2>
                     <p class="marginT1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, nam eos? Ut minima dolor natus illum, perferendis, doloremque amet odit magnam, sapiente exercitationem facilis sequi dolores totam suscipit veritatis eveniet!</p>
-                    <button class="marginT1">Trova un partner</button>
+                    <button class="myButtonGrey marginT1"><a href=""><p>Trova un partner</p></a></button>
                 </div>
             </div> 
         </section>
@@ -277,7 +277,12 @@
             </div>
             <div class="row boxed gap3 marginT2 ">
                 <div class="colcalc1 flex directionColumn gap">
-                    <img src="./img/business-feature-coordinate-it.png" alt="">
+                    <img class="whiteFix" src="./img/business-feature-switching-tools.png" alt="">
+                    <h3>Passa di meno da uno strumento all'altro</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus autem culpa harum ratione, recusandae eos, sequi iure nesciunt nisi nostrum consequuntur, soluta similique accusantium! Iure facilis similique ratione atque amet?</p>
+                </div>
+                <div class="colcalc1 flex directionColumn gap">
+                    <img class="whiteFix" src="./img/business-feature-send-files-it.png" alt="">
                     <h3>Passa di meno da uno strumento all'altro</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus autem culpa harum ratione, recusandae eos, sequi iure nesciunt nisi nostrum consequuntur, soluta similique accusantium! Iure facilis similique ratione atque amet?</p>
                 </div>
@@ -287,22 +292,17 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus autem culpa harum ratione, recusandae eos, sequi iure nesciunt nisi nostrum consequuntur, soluta similique accusantium! Iure facilis similique ratione atque amet?</p>
                 </div>
                 <div class="colcalc1 flex directionColumn gap">
-                    <img src="./img/business-feature-coordinate-it.png" alt="">
+                    <img src="./img/business-feature-integrations-it.png" alt="">
                     <h3>Passa di meno da uno strumento all'altro</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus autem culpa harum ratione, recusandae eos, sequi iure nesciunt nisi nostrum consequuntur, soluta similique accusantium! Iure facilis similique ratione atque amet?</p>
                 </div>
                 <div class="colcalc1 flex directionColumn gap">
-                    <img src="./img/business-feature-coordinate-it.png" alt="">
+                    <img src="./img/business-feature-multi-device.png" alt="">
                     <h3>Passa di meno da uno strumento all'altro</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus autem culpa harum ratione, recusandae eos, sequi iure nesciunt nisi nostrum consequuntur, soluta similique accusantium! Iure facilis similique ratione atque amet?</p>
                 </div>
                 <div class="colcalc1 flex directionColumn gap">
-                    <img src="./img/business-feature-coordinate-it.png" alt="">
-                    <h3>Passa di meno da uno strumento all'altro</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus autem culpa harum ratione, recusandae eos, sequi iure nesciunt nisi nostrum consequuntur, soluta similique accusantium! Iure facilis similique ratione atque amet?</p>
-                </div>
-                <div class="colcalc1 flex directionColumn gap">
-                    <img src="./img/business-feature-coordinate-it.png" alt="">
+                    <img src="./img/business-feature-security.png" alt="">
                     <h3>Passa di meno da uno strumento all'altro</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus autem culpa harum ratione, recusandae eos, sequi iure nesciunt nisi nostrum consequuntur, soluta similique accusantium! Iure facilis similique ratione atque amet?</p>
                 </div>
@@ -315,11 +315,11 @@
         <section class="colorSecondary">
             <!-- fascia con i quadrati e overflow y al centrale -->
             <div class="containerSquares flex paddingT5">
-                <div class="colCalcSquares row colorPrimary">
-                    <div class="squared"></div>
-                    <div class="squared"></div>
-                    <div class="squared"></div>
-                    <div class="squared"></div>
+                <div class="colCalcSquares row">
+                    <div id="designit" class="squared flex alignCenter justifyCenter"><img src="./img/designit.svg" alt=""></div>
+                    <div id="wbr" class="squared flex alignCenter justifyCenter"><img src="./img/world_bicycle_relief.svg" alt=""></div>
+                    <div id="asu" class="squared flex alignCenter justifyCenter"><img src="./img/arizona_state_university.svg" alt=""></div>
+                    <div id="lonely" class="squared flex alignCenter justifyCenter"><img src="./img/lonely_planet.svg" alt=""></div>
                 </div>
                 <div class="colCalcSquares midBanner">
                     <div class="highContent pad2 flex directionColumn">
@@ -328,11 +328,12 @@
                         <p class="marginT2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim ratione distinctio libero praesentium nisi, ut, eligendi ab ea laboriosam voluptate provident reiciendis dolores quisquam mollitia tempora sunt fugit aliquam corrupti!</p>
                     </div>
                 </div>
-                <div class="colCalcSquares row colorPrimary">
-                    <div class="squared"></div>
-                    <div class="squared"></div>
-                    <div class="squared"></div>
-                    <div class="squared"></div>
+                <div class="colCalcSquares row">
+                    <div id="hearst" class="squared flex alignCenter justifyCenter"><img src="./img/hearst_corp.svg" alt=""></div>
+                    <div id="uf" class="squared flex alignCenter justifyCenter"><img src="./img/university_of_florida.svg" alt=""></div>
+                    <div id="topps" class="squared flex alignCenter justifyCenter"><img src="./img/topps.svg" alt=""></div>
+                    <div id="clear" class="squared flex alignCenter justifyCenter"><img src="./img/clear_channel.svg" alt=""></div>
+
                 </div>
             </div>
             <!-- fascia azzurra con button  -->
@@ -342,7 +343,7 @@
                         <h2>Porta Dropbox Business nella tua azienda.</h2>
                     </div>
                     <div class="paddingT5 paddingB5 col30 flex justifyCenter alignCenter">
-                        <button><a href=""> inizia la tua prova gratuita</a></button>
+                        <button class="myButtonGrey col"><a href=""> <p>inizia la tua prova gratuita</p></a></button>
                     </div>
                 </div>
             </div>
