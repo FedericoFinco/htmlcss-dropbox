@@ -4,9 +4,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
-
+a, a:visited, a:hover, a:active { color:#5200ee; }
 img{
     margin: 0;
     display: block;
@@ -14,14 +14,14 @@ img{
 }
 
 h1{font-size: 4rem;
-font-weight: 900;
-padding-top: 4rem;
-padding-bottom: 2rem;}
+    font-weight: 900;
+    padding-top: 4rem;
+    padding-bottom: 2rem;}
 h2{font-size: 2.5rem;}
-h3{font-size: 1rem;}
-p{font-size: 14px;
-font-weight: lighter;
-line-height: 1.2rem;}
+h3{font-size: 1.25rem;}
+p{font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.2rem;}
 body{
     background-color: #222;
 }
@@ -30,12 +30,14 @@ body{
 .colorSecondary{background-color: rgb(233, 233, 233);}
 .colorTerziary{background-color: black;}
 
-.boxed{width: 1010px;
-margin: 0 auto;}
+.boxed{max-width: 1010px;
+    margin: 0 auto;}
 
 .negativeMar4Bot{margin-bottom: -4rem;}
+.gap05{gap: 0.5rem;}
 .gap{gap: 1rem;}
 .gap3{gap: 3rem;}
+.pad05{padding: 0.5rem;}
 .pad1{padding: 1em;}
 .pad2{padding: 2em;}
 .paddingB5{padding-bottom: 5rem;}
@@ -48,6 +50,7 @@ margin: 0 auto;}
 .marginT3{margin-top: 3rem;}
 .marginB3{margin-bottom: 3rem;}
 
+
 .textAlignL{text-align: end;}
 
 .flex{display: flex;}
@@ -58,23 +61,42 @@ margin: 0 auto;}
 .justifyCenter{justify-content: center;}
 .alignFlexStart{align-items: flex-start;}
 .alignCenter{align-items: center;}
+.wide{justify-self: stretch;}
 
-.col60{width: 60%;}
-.col65{width: 65%;}
-.col50{width: 50%;}
+.col{width: 100%;}
 .col70{width: 70%;}
+.col65{width: 65%;}
+.col60{width: 60%;}
+.col50{width: 50%;}
 .col40{width: 40%;}
 .col35{width: 35%;}
 .col30{width: 30%;}
-.col{width: 100%;}
 .col20{width: 20%;}
 .col14{width: 14%;}
 
+.myButtonBlue {
+	background:linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+	background-color:#2dabf9;
+	border:none;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff !important;
+	padding: 0.5rem 1rem;
+	text-decoration:none;
+}
+.myButtonBlue:hover {
+	background:linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+	background-color:#0688fa;
+}
+.myButtonBlue:active {
+	position:relative;
+	top:1px;
+}
 /************* HEADER **************/
 
-nav {
+header {
     background-color: white;
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
@@ -85,11 +107,27 @@ nav {
     display: flex;
     align-items: center;
     list-style: none;
+    width: 100%;
 }
 
-.linkContainer a{
+header .pad1 .linkContainer a{
     text-decoration: none;
+    color: black;
 
+}
+
+header .pad1 .linkContainer .myButtonBlue a{
+    color:white;
+}
+
+.logo{
+    object-fit: contain;
+}
+
+/***************** MAIN **************/
+.myButtonBlue a{
+    color: white;
+    text-decoration: none;
 }
 
 .jamboContainer i{
@@ -98,12 +136,9 @@ nav {
     font-weight: bold;
 }
 
-/***************** MAIN **************/
-
 .jamboContainer{
     max-width: 1120px;
     margin: 0 auto;
-    padding-top: 3rem;
 }
 /************ RADIO BUTTON OP *********/
 .containerCheck input {
@@ -166,6 +201,10 @@ nav {
 .lineHeight2{line-height: 2rem;}
 
 /**************** MAIN AGAIN ********/
+.grey{
+    color: lightgray;
+    font-weight: lighter;
+}
 
 .containerCheck{
     margin-right: 4em;
@@ -182,8 +221,16 @@ nav {
 }
 
 .typeInfo{
-    background-color: aquamarine;
-    min-height: 650px;
+    height: 100%;
+    padding: 2rem 1rem;
+}
+
+.typeInfo ul{
+    list-style-type: none;
+}
+
+.typeInfo .fa-check{
+    color:#0688fa;
 }
 
 .colcalc1{width: calc(100%/3 - 2rem);}
@@ -207,23 +254,25 @@ nav {
     overflow-y: scroll;
 }
 
+.midBanner 
+
 .highContent{min-height: calc(100vw/2);}
 
 .FAQHidden{
     display: none;
-    transition: 1s;
 }
+
+.FAQ{transition: 1s;} /***NON WORKA***/
 
 .FAQ>span>i{
     transform: rotate(180deg);
-    color: red;
 }
 .FAQ:hover .FAQHidden{
     display: block;
 }
-.FAQ:hover .FAQ i{
-    transform: rotate(180deg);
-    color: black;
+.FAQ:hover .arrow{
+    transform: rotate(360deg);
+    color: rgb(112, 21, 21);
 }
 
 /***************** FOOTER *****************/
@@ -238,7 +287,7 @@ footer ul{
     list-style: none;
 }
 
-footer a{
+footer .boxed  .col20 a{
     text-decoration: none;
-
+    color: white;
 }
