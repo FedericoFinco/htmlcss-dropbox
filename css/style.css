@@ -73,7 +73,7 @@ body{
 .col35{width: 35%;}
 .col30{width: 30%;}
 .col20{width: 20%;}
-.col14{width: 14%;}
+.col15{width: 15%;}
 
 .myButtonBlue {
 	background:linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
@@ -82,7 +82,6 @@ body{
 	display:inline-block;
 	cursor:pointer;
 	padding: 0.5rem 1rem;
-	text-decoration:none;
 }
 .myButtonBlue:hover {
 	background:linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
@@ -99,9 +98,7 @@ body{
 	border:none;
 	display:inline-block;
 	cursor:pointer;
-	color:#000000;
 	padding:0.5rem 1rem;
-	text-decoration:none;
 }
 .myButtonGrey:hover {
 	background:linear-gradient(to bottom, #d9cdcc 5%, #fcf3f2 100%);
@@ -144,6 +141,7 @@ header .pad1 .linkContainer .myButtonBlue a{
 }
 
 /***************** MAIN **************/
+
 .myButtonBlue a{
     color: white;
     text-decoration: none;
